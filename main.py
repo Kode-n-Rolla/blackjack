@@ -1,7 +1,7 @@
 from card import *
 from player import *
 
-
+"""Главная игровая функция"""
 def black_jack():
     this_deck = Deck()
     player = Player('Френки')
