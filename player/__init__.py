@@ -1,13 +1,16 @@
 class Player(object):
-
-    def __init__(self, name):
+    
+    """Инициализия класса по имени и карт в руке"""
+    def __init__(self, name) -> None:
         self.name = name
         self.cards = []
-
-    def add_card(self, card):
+        
+    """Добавление карт в руку"""
+    def add_card(self, card) -> None:
         self.cards.append(card)
 
-    def get_value(self):
+    """Получение очков достоинства карт в рукt"""
+    def get_value(self) -> int:
         result = 0
         aces = 0
         for card in self.cards:
@@ -18,7 +21,8 @@ class Player(object):
             result += aces * 10
         return result
 
-    def __str__(self):
+    """Вывод достоинства карт в руке"""
+    def __str__(self) -> str:
         text = ''
         for card in self.cards:
             text += str(card) + ' '
