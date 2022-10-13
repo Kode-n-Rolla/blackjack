@@ -1,6 +1,6 @@
 import random
 
-"""Класс Card инициализируется мастью и достоинством карты"""
+"""Class Card initialized suit and card value"""
 class Card(object):
 
     def __init__(self, rank, suit) -> None:
@@ -19,7 +19,7 @@ class Card(object):
     def __str__(self) -> str:
         return '%s%s' % (self.rank, self.suit)
 
-"""Класс Deck для инициализации карт на 'игровом поле'"""
+"""Class Deck initialized cards on table'"""
 class Deck(object):
 
     def __init__(self):
