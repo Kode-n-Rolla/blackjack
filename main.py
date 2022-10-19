@@ -4,7 +4,8 @@ from player import *
 """Main funcion"""
 def black_jack():
     this_deck = Deck()
-    player = Player('Frencky')
+    player_name = input('What is your name? ')
+    player = Player(player_name)
     dealer = Player('Dealer')
     player.add_card(this_deck.deal_card())
     player.add_card(this_deck.deal_card())
